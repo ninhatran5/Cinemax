@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/client', function () {
     return view('client/home');
 });
+Route::get('/login', function () {
+    return view('client.block.login-register.login-register');
+});
