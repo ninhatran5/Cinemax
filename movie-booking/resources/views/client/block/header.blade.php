@@ -37,20 +37,37 @@
                     </div>
 
                     <ul class="d-flex justify-content-end list-unstyled m-0">
+                        <!-- Icon Ticket/Vé -->
                         <li>
-                            <a href="#" class="rounded-circle bg-light p-2 mx-1">
-                                <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <use xlink:href="#user"></use>
+                            <a href="/booking"
+                                class="bg-light d-flex align-items-center justify-content-center mx-2 p-0"
+                                title="Đặt vé"
+                                style="width:48px;height:48px;min-width:48px;min-height:48px;border-radius:50%;">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="7" width="18" height="10" rx="2" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <circle cx="12" cy="12" r="2" fill="currentColor" />
                                 </svg>
                             </a>
                         </li>
+                        <!-- Icon Profile -->
                         <li>
-                            <a href="#" class="rounded-circle bg-light p-2 mx-1">
-                                <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <use xlink:href="#heart"></use>
+                            <a href="/profile"
+                                class="bg-light d-flex align-items-center justify-content-center mx-2 p-0"
+                                title="Tài khoản"
+                                style="width:48px;height:48px;min-width:48px;min-height:48px;border-radius:50%;">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="8" r="4" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2" />
                                 </svg>
                             </a>
                         </li>
+
                         <li class="d-lg-none">
                             <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
