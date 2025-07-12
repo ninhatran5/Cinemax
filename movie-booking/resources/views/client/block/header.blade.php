@@ -33,7 +33,7 @@
                     class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
                     <div class="support-box text-end d-none d-xl-block">
                         <span class="fs-6 text-muted">For Support?</span>
-                        <h5 class="mb-0">+980-34984089</h5>
+                        <h5 class="mb-0">+84 971364828</h5>
                     </div>
 
                     <ul class="d-flex justify-content-end list-unstyled m-0">
@@ -69,13 +69,6 @@
                         </li>
                     </ul>
 
-                    <div class="cart text-end d-none d-lg-block dropdown">
-                        <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button"
-                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                            <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
-                            <span class="cart-total fs-5 fw-bold">$1290.00</span>
-                        </button>
-                    </div>
                 </div>
 
             </div>
@@ -85,10 +78,10 @@
                 <div class="d-flex  justify-content-center justify-content-sm-between align-items-center">
                     <nav class="main-menu d-flex navbar navbar-expand-lg">
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        {{-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
-                        </button>
+                        </button> --}}
 
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel">
@@ -102,20 +95,20 @@
 
                                 <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
                                     <li class="nav-item active">
-                                        <a href="#women" class="nav-link">Women</a>
+                                        <a href="#women" class="nav-link">Trang Chủ</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a href="#men" class="nav-link">Men</a>
+                                        <a href="#men" class="nav-link">Phim</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#kids" class="nav-link">Kids</a>
+                                        <a href="#kids" class="nav-link">Giá Vé</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#accessories" class="nav-link">Accessories</a>
+                                        <a href="#accessories" class="nav-link">Phiếu Giảm Giá</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" role="button" id="pages"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                            data-bs-toggle="dropdown" aria-expanded="false">Thể Loại Phim</a>
                                         <ul class="dropdown-menu" aria-labelledby="pages">
                                             <li><a href="index.html" class="dropdown-item">About Us </a></li>
                                             <li><a href="index.html" class="dropdown-item">Shop </a></li>
@@ -132,13 +125,10 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#brand" class="nav-link">Brand</a>
+                                        <a href="#brand" class="nav-link">Giới Thiệu</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#sale" class="nav-link">Sale</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#blog" class="nav-link">Blog</a>
+                                        <a href="#sale" class="nav-link">Liên Hệ</a>
                                     </li>
                                 </ul>
 
