@@ -22,11 +22,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
 </head>
 
 <body>
-    {{-- @include('client.block.loading') --}}
+    @include('client.block.loading')
 
 
 
@@ -52,6 +53,7 @@
     @include('client.block.header')
     @include('client.block.slide')
     @include('client.block.category-show')
+    @yield('content')
     @include('client.block.footer')
     @include('client.block.footer-bottom')
     <script src="{{ asset('cinemax/js/jquery-1.11.0.min.js') }}"></script>

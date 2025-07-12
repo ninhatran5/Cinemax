@@ -18,12 +18,14 @@
             <div class="d-flex flex-column flex-md-row align-items-center justify-content-between py-2 px-4">
                 <img src="../../cinemax/images/logo.png" alt="Logo" height="60" class="mb-3 mb-md-0" />
 
-                <form class="d-flex align-items-center justify-content-end w-100" style="max-width: 650px;">
-                    <input type="text" class="form-control form-control-sm me-3" placeholder="Email hoặc SĐT"
-                        style="flex: 1.2;">
-                    <input type="password" class="form-control form-control-sm me-3" placeholder="Mật khẩu"
-                        style="flex: 1.2;">
-                    <button class="btn btn-sm btn-primary px-4" style="min-width: 130px; height: 38px;">
+                <form class="d-flex align-items-center justify-content-end w-100" style="max-width: 650px;"
+                    method="POST" action="{{ route('client.login') }}">
+                    @csrf
+                    <input type="email" class="form-control form-control-sm me-3" name="email" placeholder="Email"
+                        style="flex: 1.2;" required>
+                    <input type="password" class="form-control form-control-sm me-3" name="password"
+                        placeholder="Mật khẩu" style="flex: 1.2;" required>
+                    <button class="btn btn-sm btn-primary px-4" style="min-width: 130px; height: 38px;" type="submit">
                         Đăng Nhập
                     </button>
                 </form>
@@ -49,54 +51,25 @@
                     <div class="login-box bg-white p-4 rounded border">
                         <h3>Create an account</h3>
                         <p>It's free and always will be.</p>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 mb-2">
-                                    <input type="text" class="form-control" placeholder="First name" />
-                                </div>
-                                <div class="col-md-6 mb-2">
-                                    <input type="text" class="form-control" placeholder="Surname" />
-                                </div>
+                        <form method="POST" action="{{ route('client.register') }}">
+                            @csrf
+                            <div class="mb-2">
+                                <input type="text" class="form-control" name="name" placeholder="Họ và tên"
+                                    required />
                             </div>
                             <div class="mb-2">
-                                <input type="email" class="form-control"
-                                    placeholder="Mobile number or email address" />
+                                <input type="email" class="form-control" name="email" placeholder="Email"
+                                    required />
                             </div>
                             <div class="mb-2">
-                                <input type="password" class="form-control" placeholder="New password" />
+                                <input type="password" class="form-control" name="password" placeholder="Mật khẩu"
+                                    required />
                             </div>
-
-                            <label>Birthday</label>
-                            <div class="row mb-2">
-                                <div class="col-4">
-                                    <select class="form-select">
-                                        <option>1</option>
-                                        <option selected>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                                <div class="col-4">
-                                    <select class="form-select">
-                                        <option selected>Dec</option>
-                                        <option>Jan</option>
-                                        <option>Feb</option>
-                                    </select>
-                                </div>
-                                <div class="col-4">
-                                    <select class="form-select">
-                                        <option>1990</option>
-                                        <option selected>1992</option>
-                                        <option>1995</option>
-                                    </select>
-                                </div>
+                            <div class="mb-2">
+                                <input type="password" class="form-control" name="password_confirmation"
+                                    placeholder="Nhập lại mật khẩu" required />
                             </div>
-
-                            <div class="mb-3">
-                                <label class="me-2"><input type="radio" name="gender" /> Female</label>
-                                <label><input type="radio" name="gender" /> Male</label>
-                            </div>
-
-                            <button class="btn btn-success w-100">Create an account</button>
+                            <button class="btn btn-success w-100" type="submit">Tạo tài khoản</button>
                         </form>
 
                         <small class="d-block text-center mt-3">
